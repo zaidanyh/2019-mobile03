@@ -7,4 +7,46 @@
 	android:layout_height="match_parent"
 	tools:context=".WelcomeActivity">
 
+	<ImageView
+		android:id="@+id/imageView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_eventlist" />
+
+	<TextView
+		android:id="@+id/welcome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Welcome To DTS VSGA"
+		android:textColor="#313131"
+		android:textSize="24sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView2"
+		android:fontFamily="@font/montserrat_semi_bold"/>
+
+	<TextView
+		android:id="@+id/sub_welcome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/montserrat_semi_bold"
+		android:text="What is going to happen tomorrow?"
+		android:textColor="#313131"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/welcome"/>
+	<ImageView
+		android:id="@+id/imageView4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:src="@drawable/bg_red" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
